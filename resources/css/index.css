@@ -1,51 +1,90 @@
-.header{
-    background-image: image("./resources/images/the-flatiron-building.png");
-    height: 210px;
-    background-position: center;
+.header {
+  background-image: url("../../resources/images/the-flatiron-building.png");
+  background-position: center;
+  background-size: auto;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  display: block;
 }
-  h2 {
+h2 {
     font-family: Helvetica;
     font-size: 70px;
     font-weight: bold;
     text-align: center;
-    color: black;
+    color: white;
   }
-ul{
+.navigation{
   list-style-type: none;
-  padding: 0;
+  margin: 0;
+  padding:0;
+}
+li a{
+  text-align: center;
+  padding: 4px 0px;
   font-family: Helvetica;
   font-size: 18px;
-  color: black;
-  text-align: center;
+  color: white;
+  display:block;
 }
+
 h3{
   font-family: Helvetica;
   font-size: 32px;
   font-weight: bold;
   text-align: center;
   }
-h4{
+ h4, #work, #team,#contact {
   font-family: Helvetica;
   font-size: 23px;
   font-weight: bold;
   text-align: center;
 }
-p{
+p {
   font-family: Helvetica;
   font-size: 14px;
   text-align: center;
 }
-img{
-  position: relative;
-  left: 760px;
+img {
+  display: block;
+  padding: 0px;
+  margin-left: auto;
+  margin-right: auto;
 }
-.highlight{
-  background-image: image("./resources/images/the-flatiron-building.png");
-  background-size: auto;
-  height: 30px;
-  background-position: center;
+
+.highlight h4{
   font-family: Helvetica;
   font-size: 23px;
   font-weight: bold;
   text-align: center;
+  color: white;
+  background-image: url("../../resources/images/the-flatiron-building.png");
+  background-size:cover;
+  display: block;
+}
+.footer p{
+  font-family: Helvetica;
+  font-size: 11px;
+  color: white;
+  text-align: left;
+  }
+  .footer{
+  background-color: dimgray;
+  background-size: auto;
+  display:flex;
+  align-items: baseline;
+}
+
+.footer-nav {
+  list-style-type: none;
+  margin: 0;
+  padding:0;
+  display: flex;
+}
+.footer-nav li a{
+  display:inline;
+  font-family: Helvetica;
+  font-size: 18px;
+  color: white;
+  flex-direction: row;
+  padding: 2px;
 }
